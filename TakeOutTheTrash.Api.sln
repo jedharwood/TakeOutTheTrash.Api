@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeOutTheTrash.Api", "TakeOutTheTrash.Api\TakeOutTheTrash.Api.csproj", "{4A5831FC-5ED3-4671-8153-68510687E7CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1EB2CAAD-43C5-4834-8ED2-7089EFF14ED9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{A4C4B930-996D-4E9A-B1EB-5FFDF0712A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeOutTheTrash.Api.UnitTests", "TakeOutTheTrash.Api.UnitTests\TakeOutTheTrash.Api.UnitTests.csproj", "{85024408-D3BD-4AEC-B657-F09383FF1F1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A5831FC-5ED3-4671-8153-68510687E7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5831FC-5ED3-4671-8153-68510687E7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5831FC-5ED3-4671-8153-68510687E7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5831FC-5ED3-4671-8153-68510687E7CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85024408-D3BD-4AEC-B657-F09383FF1F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85024408-D3BD-4AEC-B657-F09383FF1F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85024408-D3BD-4AEC-B657-F09383FF1F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85024408-D3BD-4AEC-B657-F09383FF1F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C35C4B90-324C-4198-AE64-4A03447A8EBE}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4C4B930-996D-4E9A-B1EB-5FFDF0712A21} = {1EB2CAAD-43C5-4834-8ED2-7089EFF14ED9}
+		{85024408-D3BD-4AEC-B657-F09383FF1F1B} = {A4C4B930-996D-4E9A-B1EB-5FFDF0712A21}
+	EndGlobalSection
+EndGlobal
