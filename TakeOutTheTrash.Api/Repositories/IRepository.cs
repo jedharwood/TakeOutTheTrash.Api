@@ -7,6 +7,8 @@ namespace TakeOutTheTrash.Api.Repositories
     {
         List<Prefecture> GetAllPrefectures();
 
+        List<City> GetAllCitiesByPrefectureId(int id);
+
         City GetCityById(int id);
     }
 }

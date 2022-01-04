@@ -26,5 +26,18 @@ namespace TakeOutTheTrash.Api.Controllers
 
             return Ok(prefectures);
         }
+
+        [HttpGet("{int:id}")]
+        public IActionResult Get(int id) // make async once repository is fleshed-out
+        {
+            var cities = _repository.GetAllCitiesByPrefectureId(id);
+
+            if (cities.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(cities);
+        }
     }
 }

@@ -9,11 +9,18 @@ namespace TakeOutTheTrash.Api.Repositories
         {
         }
 
-        public List<Prefecture> GetAllPrefectures() // default to empty collection
+        public List<Prefecture> GetAllPrefectures() // default to empty collection?
         {
             var stubbedPrefectures = new List<Prefecture>();
 
             return stubbedPrefectures;
+        }
+
+        public List<City> GetAllCitiesByPrefectureId(int id) // default to empty collection?
+        {
+            var stubbedCities = new List<City>();
+
+            return stubbedCities;
         }
 
         public City GetCityById(int id)
