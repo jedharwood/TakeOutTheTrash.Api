@@ -9,7 +9,7 @@ namespace TakeOutTheTrash.Api.Repositories
         {
         }
 
-        public List<Prefecture> GetAllPrefectures()
+        public List<Prefecture> GetAllPrefectures() // default to empty collection
         {
             var stubbedPrefectures = new List<Prefecture>();
 
