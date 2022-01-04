@@ -20,6 +20,11 @@ namespace TakeOutTheTrash.Api.Controllers
         {
             var prefectures = _repository.GetAllPrefectures();
 
+            if (prefectures.Count == 0)
+            {
+                return NotFound();
+            }
+
             var response = new PrefecturesResponse(
                 prefectures);
 

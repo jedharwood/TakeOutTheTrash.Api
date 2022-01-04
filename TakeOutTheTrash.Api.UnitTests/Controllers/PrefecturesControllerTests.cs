@@ -6,7 +6,6 @@ using TakeOutTheTrash.Api.Controllers;
 using TakeOutTheTrash.Api.Repositories;
 using TakeOutTheTrash.Api.Models;
 using System.Collections.Generic;
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TakeOutTheTrash.Api.UnitTests.Controllers
@@ -29,7 +28,23 @@ namespace TakeOutTheTrash.Api.UnitTests.Controllers
         }
 
         [Fact]
-        public void Get_ShouldReturnPrefecturesResult()
+        public void Get_ShouldReturnNotFound_IfPrefecturesCollectionEmpty()
+        {
+            // Arrange
+            var prefecturesList = new List<Prefecture>();
+
+            repository.Setup(r => r.GetAllPrefectures()).Returns(prefecturesList);
+
+            // Act
+            var result = sut.Get();
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.IsAssignableFrom<NotFoundResult>(result);
+        }
+
+        [Fact]
+        public void Get_ShouldReturnOKPrefecturesResult()
         {
             // Arrange
             var prefecturesList = new List<Prefecture>();
