@@ -15,5 +15,12 @@ namespace TakeOutTheTrash.Api.Repositories
 
             return stubbedPrefectures;
         }
+
+        public City GetCityById(int id)
+        {
+            var stubbedCity = new City();
+
+            return stubbedCity;
+        }
     }
 }

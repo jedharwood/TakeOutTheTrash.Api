@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TakeOutTheTrash.Api.Repositories;
-using TakeOutTheTrash.Api.Responses;
 
 namespace TakeOutTheTrash.Api.Controllers
 {
     [ApiController]
-    [Route("[prefectures]")]
+    [Route("prefectures")]
     public class PrefecturesController : ControllerBase
     {
         private readonly IRepository _repository;
@@ -25,10 +24,7 @@ namespace TakeOutTheTrash.Api.Controllers
                 return NotFound();
             }
 
-            var response = new PrefecturesResponse(
-                prefectures);
-
-            return Ok(response);
+            return Ok(prefectures);
         }
     }
 }
