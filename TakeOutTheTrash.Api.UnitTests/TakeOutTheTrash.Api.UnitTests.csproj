@@ -26,12 +26,12 @@
     <None Remove="AutoFixture" />
     <None Remove="Moq" />
     <None Remove="Validators\" />
-    <None Remove="Validators\Utilities\" />
+    <None Remove="Utilities\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Validators\" />
-    <Folder Include="Validators\Utilities\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TakeOutTheTrash.Api\TakeOutTheTrash.Api.csproj" />

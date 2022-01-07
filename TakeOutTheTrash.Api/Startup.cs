@@ -11,6 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TakeOutTheTrash.Api.Repositories;
+using FluentValidation;
+using TakeOutTheTrash.Api.Models;
+using TakeOutTheTrash.Api.Validators;
+using FluentValidation.AspNetCore;
 
 namespace TakeOutTheTrash.Api
 {
@@ -26,9 +30,14 @@ namespace TakeOutTheTrash.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation(s =>
+            {
+                s.RegisterValidatorsFromAssemblyContaining<Startup>();
+            });
+
 
             services.AddTransient<IRepository, Repository>();
+            //services.AddTransient<IValidator<FeedbackSubmission>, FeedbackSubmissionValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

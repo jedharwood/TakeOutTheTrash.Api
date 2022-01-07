@@ -2,7 +2,7 @@
 using AutoFixture;
 using TakeOutTheTrash.Api.Models;
 using TakeOutTheTrash.Api.Validators;
-using TakeOutTheTrash.Api.UnitTests.Validators.Utilities;
+using TakeOutTheTrash.Api.UnitTests.Utilities;
 
 namespace TakeOutTheTrash.Api.UnitTests.Validators
 {

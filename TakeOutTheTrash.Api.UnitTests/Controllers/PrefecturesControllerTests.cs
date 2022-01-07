@@ -57,6 +57,7 @@ namespace TakeOutTheTrash.Api.UnitTests.Controllers
             Assert.NotNull(result);
             Assert.Equal(200, result.StatusCode);
             Assert.IsType<List<Prefecture>>(result.Value);
+            Assert.IsAssignableFrom<OkObjectResult>(result);
             // Set up mock to return more detailed list and assert that list and response are a match.
         }
 
@@ -94,6 +95,7 @@ namespace TakeOutTheTrash.Api.UnitTests.Controllers
             Assert.NotNull(result);
             Assert.Equal(200, result.StatusCode);
             Assert.IsType<List<City>>(result.Value);
+            Assert.IsAssignableFrom<OkObjectResult>(result);
             // Set up mock to return more detailed list and assert that list and response are a match.
         }
     }

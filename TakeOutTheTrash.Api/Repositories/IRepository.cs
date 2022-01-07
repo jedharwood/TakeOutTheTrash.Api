@@ -10,5 +10,7 @@ namespace TakeOutTheTrash.Api.Repositories
         List<City> GetAllCitiesByPrefectureId(int id);
 
         City GetCityById(int id);
+
+        bool AddFeedbackSubmission(FeedbackSubmission feedbackSubmission);
     }
 }
