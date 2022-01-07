@@ -29,5 +29,12 @@ namespace TakeOutTheTrash.Api.Repositories
 
             return stubbedCity;
         }
+
+        public bool AddFeedbackSubmission(FeedbackSubmission feedbackSubmission)
+        {
+            var stubbedDbInsertSuccess = true;
+
+            return stubbedDbInsertSuccess;
+        }
     }
 }
