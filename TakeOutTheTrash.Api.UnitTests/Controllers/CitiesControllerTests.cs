@@ -57,6 +57,7 @@ namespace TakeOutTheTrash.Api.UnitTests.Controllers
             Assert.NotNull(result);
             Assert.Equal(200, result.StatusCode);
             Assert.IsType<City>(result.Value);
+            Assert.IsAssignableFrom<OkObjectResult>(result);
             // Set up mock to return more detailed city and assert that city and response are a match.
         }
     }

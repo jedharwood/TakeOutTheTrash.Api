@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace TakeOutTheTrash.Api.UnitTests.Validators.Utilities
+namespace TakeOutTheTrash.Api.UnitTests.Utilities
 {
     public class TestingUtilities
     {
